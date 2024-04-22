@@ -1,0 +1,31 @@
+.header {
+    margin-top: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        color: #13183F;
+    }
+
+    &__text {
+        color: #83869A;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+}
+
+.button__header {
+    background-image: linear-gradient(#FF6F48,#F02AA6);
+    color: white;
+    width: 167px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 31px;
+    font-size: 16px;
+    font-weight: 600;
+}
