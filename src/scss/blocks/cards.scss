@@ -1,3 +1,6 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
 .cards {
     padding-left: 16px;
     padding-right: 16px;
@@ -12,6 +15,16 @@
         padding-right: 29px;
         border-radius: 10px;
         margin-bottom: 40px;
+
+    }
+
+    @include responsive (tablet) {
+        padding-left: 39px;
+
+        &__title {
+            width: 339px;
+            height: 259px;
+        }
     }
 }
 

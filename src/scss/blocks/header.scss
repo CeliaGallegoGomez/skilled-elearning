@@ -1,7 +1,48 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
 .header {
     margin-top: 38px;
     padding-left: 16px;
     padding-right: 16px;
+
+    @include responsive (tablet) {
+        height: 500px;
+        padding-left: 39px;
+        padding-right: 0;
+        display: flex;
+
+        &__picture {
+            position:absolute;
+            left:400px;
+            top: -70px;
+            width: 640px;
+            height: 640px;
+        }
+
+        &__container {
+            width:398px ;
+        }
+
+    }
+
+    @include responsive (desktop) {
+        padding-left: 165px;
+        height: 600px;
+
+        &__picture {
+            position: absolute;
+            left: 750px;
+            top: -120px;
+            width: 991px;
+            height: 936px;
+        }
+
+        &__container {
+            margin-top: 100px;
+        }
+        
+    }
 
     &__title {
         font-weight: 800;
@@ -30,4 +71,12 @@
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 46px;
+
+    @include responsive (desktop) {
+        height: 63px;
+
+        @include hover {
+            opacity: 50%;
+        }
+    }
 }
