@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .nav {
     display: flex;
     width: 375px;
@@ -6,6 +8,14 @@
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 16px;
+
+    @include responsive (tablet) {
+        width: 689px;
+        padding-left: 39px;
+        padding-right: 39px;
+        padding-top: 24px;
+
+    }
 }
 
 .button__nav {
@@ -20,3 +30,4 @@
     font-size: 16px;
     font-weight: 600;
 }
+
