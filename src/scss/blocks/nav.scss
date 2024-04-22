@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    width: 375px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+}
+
+.button__nav {
+    background-color: #13183F;
+    color: white;
+    width: 140px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 600;
+}
