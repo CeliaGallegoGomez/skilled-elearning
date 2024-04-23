@@ -26,31 +26,4 @@
     }
 }
 
-.button__nav {
-    background-color: #13183F;
-    color: white;
-    width: 140px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 28px;
-    font-size: 16px;
-    font-weight: 600;
-
-    @include responsive (tablet) {
-        width: 140px;
-        height: 48px;
-    }
-
-    @include responsive (desktop) {
-        width: 167px;
-        height: 56px;
-        font-size: 18px;
-
-        @include hover {
-            background-color: #666CA3;
-        }
-    }
-}
 
